@@ -1,12 +1,15 @@
-import './App.css'
+import "./App.css";
+import Routing from "./Routing";
 
 function App() {
-
+  const darkMode = false;
   return (
-<h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className={darkMode ? "dark" : "light"}>
+      <div className="dark:bg-neutral-500">
+        <Routing />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
